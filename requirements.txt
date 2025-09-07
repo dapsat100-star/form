@@ -1,5 +1,0 @@
-streamlit
-reportlab
-python-docx
-pydantic
-pillow
