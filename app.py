@@ -93,7 +93,7 @@ class Relatorio(BaseModel):
 # ===================== Utilidades =====================
 def to_markdown(r: Relatorio) -> str:
     """Gera um markdown organizado do relatório."""
-    autores_md = "
+    autores_md = 
 ".join([f"- {a.nome} ({a.cargo}) <{a.email}>" for a in r.autores if a.nome.strip()])
     refs_md = "
 ".join([f"- {x.referencia}" for x in r.referencias if x.referencia.strip()])
